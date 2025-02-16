@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SurveyForm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">SurveyForm</h1>
+      <p id="description">
+        <strong>Thank you for taking the time to help us improve the platform</strong>
+      </p>
+    </div>
+        <form id="survey-form">
+          <label for="name"  id="name-label">Name : <br>
+            <input id="name" type="text"  required placeholder="Enter your Name" >  
+          </label><br>
+
+
+          <label id="email-label" for ="email">Email: <br> <input id="email" type="email" required  placeholder="Enter your Email" ></label> <br>
+          <label for="number" id="number-label">Age: <br> <input type="number" id="number" min="13" max="88" placeholder="Enter your Age"></label><br>
+
+          <label for ="dropdown">which role describes you ?</label>
+          <select id="dropdown" required> 
+            <option value="" disabled selected>Select your role</option>
+            <option value="student">student</option>
+            <option value="professtional">professtional</option>
+          </select>
+          <p>would you recommend us ?</p> <br>
+          <label for="radio"><input type="radio" name="radio"  value="Yes">Yes</label>
+          <label for="radio"><input type="radio" name="radio" value="No" >No</label>
+          <p>what do you like most in us ?</p>
+          <label for="checkbox"><input type="checkbox" name="checkbox" value="free courses" >free courses</label><br> 
+          <label for="checkbox"><input type="checkbox" name="checkbox" value="jop placement" >job placement</label><br>
+          <label for="checkbox"><input type="checkbox" name="checkbox" value="community" >community</label><br>
+          <label for="checkbox"><input type="checkbox" name="checkbox" value="Wiki" >Wiki</label><br>
+          <label for="checkbox"><input type="checkbox" name="checkbox" value="Other">Other</label>
+          <p>Any comments or suggestions ?</p>
+          <textarea id="comments" rows="5" cols="40" placeholder="Enter your comments here"></textarea> <br>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+  </body>
+</html>
